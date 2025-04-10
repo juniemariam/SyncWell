@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cycleFragment">
+
+    <fragment
+        android:id="@+id/cycleFragment"
+        android:name="com.example.syncwell.CycleFragment"
+        android:label="Cycle Tracker" >
+        <action
+            android:id="@+id/action_cycleFragment_to_chatFragment"
+            app:destination="@id/chatFragment"/>
+        <action
+            android:id="@+id/action_cycleFragment_to_profileFragment"
+            app:destination="@id/profileFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.syncwell.ChatFragment"
+        android:label="Chat" >
+        <action
+            android:id="@+id/action_chatFragment_to_cycleFragment"
+            app:destination="@id/cycleFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.syncwell.ProfileFragment"
+        android:label="Profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_cycleFragment"
+            app:destination="@id/cycleFragment"/>
+    </fragment>
+</navigation>
+
