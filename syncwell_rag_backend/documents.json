@@ -1,0 +1,459 @@
+[
+  {
+    "id": "exercise_001",
+    "text": "During the late follicular phase, increased estrogen and testosterone levels make this an ideal time for cardio and strength training exercises.",
+    "phase": "follicular",
+    "type": "exercise",
+    "source": "drbrighten.com"
+  },
+  {
+    "id": "exercise_002",
+    "text": "Around day 3 of your period, rising estrogen can improve energy levels and stamina, making light exercise more manageable.",
+    "phase": "menstrual",
+    "type": "exercise",
+    "source": "drbrighten.com"
+  },
+  {
+    "id": "exercise_003",
+    "text": "Ovulation can bring a surge of energy. It's a great time to try high-intensity workouts like HIIT, weightlifting, and endurance cardio.",
+    "phase": "ovulatory",
+    "type": "exercise",
+    "source": "drbrighten.com"
+  },
+  {
+    "id": "exercise_004",
+    "text": "During the luteal phase, progesterone increases, which can cause fatigue and heat sensitivity. Lower-intensity activities like pilates, yoga, or walking are recommended.",
+    "phase": "luteal",
+    "type": "exercise",
+    "source": "drbrighten.com"
+  },
+  {
+    "id": "exercise_005",
+    "text": "Follicular phase training is best for resistance exercises like HIIT, weight training, and bodyweight circuits.",
+    "phase": "follicular",
+    "type": "exercise",
+    "source": "drbrighten.com"
+  },
+  {
+    "id": "exercise_006",
+    "text": "Luteal workouts should shift from high-impact to low-impact: favor swimming, walking, or yoga towards the end of the phase.",
+    "phase": "luteal",
+    "type": "exercise",
+    "source": "drbrighten.com"
+  },
+  {
+    "id": "exercise_007",
+    "text": "During the menstrual phase, focus on low-impact exercises like walking, yoga, Pilates, and stretching. It's also okay to rest if needed.",
+    "phase": "menstrual",
+    "type": "exercise",
+    "source": "trinityhealthmichigan"
+  },
+  {
+    "id": "exercise_008",
+    "text": "In the follicular phase, increase your exercise intensity with low-impact cardio, such as jogging, biking, or hiking, as your energy levels rise.",
+    "phase": "follicular",
+    "type": "exercise",
+    "source": "trinityhealthmichigan"
+  },
+  {
+    "id": "exercise_009",
+    "text": "During ovulation, take advantage of high energy by engaging in strength training or high-intensity exercises like kickboxing, spinning, running sprints, or HIIT.",
+    "phase": "ovulation",
+    "type": "exercise",
+    "source": "trinityhealthmichigan"
+  },
+  {
+    "id": "exercise_010",
+    "text": "In the luteal phase, focus on lighter exercises such as yoga or walking, especially if you feel less energetic. Listen to your body and adjust accordingly.",
+    "phase": "luteal",
+    "type": "exercise",
+    "source": "trinityhealthmichigan"
+  },
+  {
+    "id": "exercise_011",
+    "text": "During your period, low-impact exercises like yoga, Pilates, walking, and gentle stretches can be great options if you're feeling tired, cramping, or bleeding heavily. These activities may help ease menstrual cramps, but it's also okay to take it easy if you don't feel like working out.",
+    "phase": "menstrual",
+    "type": "exercise",
+    "source": "trinityhealthmichigan"
+  },
+  {
+    "id": "exercise_012",
+    "text": "In the follicular phase, you may feel more energetic and powerful, making it a great time for high-intensity workouts like running, biking, hiking, swimming, and HIIT. Be cautious with activities that involve jumping, as estrogen levels during this phase may increase the risk of ACL injury.",
+    "phase": "follicular",
+    "type": "exercise",
+    "source": "trinityhealthmichigan"
+  },
+  {
+    "id": "exercise_013",
+    "text": "During ovulation, push yourself with high-energy exercises like kickboxing, spinning, and running. With both testosterone and estrogen peaking, you may feel more motivated and physically capable.",
+    "phase": "ovulation",
+    "type": "exercise",
+    "source": "trinityhealthmichigan"
+  },
+  {
+    "id": "exercise_014",
+    "text": "In the luteal phase, workouts that require less intense energy, such as swimming, walking, cycling, or medium-intensity yoga and Pilates, are ideal. This phase may make you feel more fatigued, and your body may take longer to recover, so focus on gentler exercises and adjust your routine based on how your body feels.",
+    "phase": "luteal",
+    "type": "exercise",
+    "source": "trinityhealthmichigan"
+  },
+  {
+    "id": "exercise_015",
+    "text": "During your period (days 1-7), low-intensity aerobic exercises like swimming, yoga, strength training, light cardio, and walking are ideal. Hormone levels are at their lowest, and energy may be low, so it’s important to listen to your body and rest if needed.",
+    "phase": "menstrual",
+    "type": "exercise",
+    "source": "boots"
+  },
+  {
+    "id": "exercise_016",
+    "text": "In the late follicular phase (days 7-13), you may feel more energized. This is a great time for strength training or high-intensity exercises. Be cautious of ligament laxity due to rising estrogen, which could increase injury risk.",
+    "phase": "follicular",
+    "type": "exercise",
+    "source": "boots"
+  },
+  {
+    "id": "exercise_017",
+    "text": "During ovulation (day 14), your testosterone surge makes it the perfect time to focus on muscle building exercises. High-intensity workouts like circuit training, HIIT, and running can be highly beneficial.",
+    "phase": "ovulation",
+    "type": "exercise",
+    "source": "boots"
+  },
+  {
+    "id": "exercise_018",
+    "text": "In the mid-luteal phase (days 20-23), progesterone levels are high, and energy may decrease. Moderate-intensity aerobic exercises like swimming, dancing, or gentle strength training (e.g., Pilates) are recommended to avoid exhaustion and overheating.",
+    "phase": "luteal",
+    "type": "exercise",
+    "source": "boots"
+  },
+  {
+    "id": "exercise_019",
+    "text": "During the late luteal phase (days 24-28), avoid endurance activities due to an increased metabolic rate. Focus on low-intensity workouts like long walks and yoga. Ensure you're fueling your body with slow-release carbs to avoid depletion.",
+    "phase": "luteal",
+    "type": "exercise",
+    "source": "boots"
+  },
+
+  {
+    "id": "diet_001",
+    "text": "Before your period, insulin sensitivity decreases and cravings for carbs increase. It's normal to feel hungrier—consider boosting your carb intake by 5–10%.",
+    "phase": "luteal",
+    "type": "diet",
+    "source": "drbrighten.com"
+  },
+  {
+    "id": "diet_003",
+    "text": "During the menstrual phase, it’s important to replenish nutrients lost through bleeding. Iron-rich foods like leafy greens, lean meats, and legumes help prevent anemia. B vitamins from whole grains, eggs, and dairy support energy and mood. Omega-3s in fatty fish, walnuts, and flaxseeds ease cramping and inflammation. Magnesium-rich foods like dark chocolate, avocado, and bananas can improve sleep and reduce cramps. High-fiber foods such as whole grains, fruits, and vegetables support digestion.",
+    "phase": "menstrual",
+    "type": "diet",
+    "source": "elara.care"
+    
+  },
+  {
+    "id": "diet_004",
+    "text": "During the ovulatory phase, a surge in estrogen and egg release boosts energy and fertility. A diet rich in fiber and antioxidants supports ovulation and reproductive health. Recommended foods include fiber-rich vegetables like broccoli and Brussels sprouts, whole grains like brown rice and quinoa, and antioxidant-rich options like berries, nuts, and seeds.",
+    "phase": "ovulatory",
+    "type": "diet",
+    "source": "elara.care"
+  },
+  {
+    "id": "diet_005",
+    "text": "During the mid-luteal phase, progesterone levels peak. Focus on nutrient-dense foods that support progesterone levels and manage symptoms such as bloating and mood swings. Foods rich in B vitamins and healthy fats can support mood and hormonal balance. Healthy Fats: Avocados, nuts, and seeds. B Vitamins: Leafy greens, whole grains, and lean proteins. Sample Recipe: Avocado and Nut Salad",
+    "phase": "luteal",
+    "type": "diet",
+    "source": "elara.care"
+  },
+  {
+    "id": "diet_006",
+    "text": "Begins on the first day of your period and finishes at ovulation. Follicle stimulating hormone (FSH) and luteinizing hormone (LH) are released to stimulate egg growth. Estrogen levels rise, and magnesium levels may be low. Foods high in magnesium and those that help modulate estrogen are beneficial. Foods to eat: trout, chicken, eggs, pumpkin and flax seeds, lentils, mung beans, berries, grapes, broccoli, lettuce, zucchini, avocado, citrus fruits, pomegranate, fermented foods, barley, oats, and wheat.",
+    "phase": "follicular",
+    "type": "diet",
+    "source": "londonclinicofnutrition"
+  },
+  {
+    "id": "diet_006",
+    "text": "Ovulation is the phase when the egg is released and estrogen peaks. High-fiber foods help regulate estrogen levels. Nutrients like glutathione, folic acid, and omega-3s can enhance fertility. Foods to eat: salmon, tuna, lamb, sesame and sunflower seeds, red lentils, berries, grapes, spinach, tomato, eggplant, dandelion, brussels sprouts, apricot, cantaloupe, fig, chocolate, coffee, alcohol (in moderation), corn, and quinoa.",
+    "phase": "ovulatory",
+    "type": "diet",
+    "source": "londonclinicofnutrition"
+  },
+  {
+    "id": "diet_007",
+    "text": "After ovulation, the corpus luteum forms and produces progesterone. This phase often comes with PMS symptoms. Magnesium-rich foods can ease pain, and complex carbs, fats, and proteins support energy and hormone balance. Foods to eat: white fish, red meat, turkey, sesame and sunflower seeds, chickpeas, navy beans, berries, grapes, cruciferous and bitter vegetables (garlic, ginger, onion, sweet potato, cauliflower, cabbage, dark greens), apple, date, pear, peach, mint, greens powder, brown rice, and millet.",
+    "phase": "luteal",
+    "type": "diet",
+    "source": "londonclinicofnutrition"
+  },
+  {
+    "id": "diet_008",
+    "text": "During the menstrual phase, focus on replenishing iron lost during menstruation. Iron-rich foods such as spinach, red meat, beans, and nuts should be paired with vitamin C-rich foods like oranges and broccoli to enhance absorption of iron.",
+    "phase": "menstrual",
+    "type": "diet",
+    "source": "trinityhealthmichigan"
+  },
+  {
+    "id": "diet_009",
+    "text": "In the follicular phase, as estrogen rises, eat lean proteins (chicken, tofu), healthy fats (avocado, seeds), and complex carbs (quinoa, brown rice). Minimize sugar, caffeine, and alcohol to maintain balance.",
+    "phase": "follicular",
+    "type": "diet",
+    "source": "trinityhealthmichigan"
+  },
+  {
+    "id": "diet_010",
+    "text": "During ovulation, continue focusing on lean proteins, healthy fats, and complex carbs to support your high energy. Add nutrient-rich options such as berries, broccoli, and Brussels sprouts to boost vitamins and antioxidants.",
+    "phase": "ovulation",
+    "type": "diet",
+    "source": "trinityhealthmichigan"
+  },
+  {
+    "id": "diet_011",
+    "text": "In the luteal phase, if you're craving sweets, opt for dark chocolate or fruit instead of sugary treats. Complex carbs like sweet potatoes and whole grains will help balance mood and energy.",
+    "phase": "luteal",
+    "type": "diet",
+    "source": "trinityhealthmichigan"
+  },
+  {
+    "id": "diet_012",
+    "text": "During the menstrual phase, iron levels may drop due to increased bleeding and cramping. Focus on iron-rich foods like beans, green leafy vegetables, lean red meat, and lentils. Pair them with vitamin C-rich foods such as berries, bell peppers, Brussels sprouts, broccoli, citrus fruits, and tomatoes to improve iron absorption.",
+    "phase": "menstrual",
+    "type": "diet",
+    "source": "bswhealth"
+  },
+  {
+    "id": "diet_013",
+    "text": "In the follicular phase, with rising estrogen levels, focus on lean proteins (chicken, turkey), non-starchy vegetables (broccoli), healthy fats (avocados), and high-fiber carbohydrates (oats, sweet potatoes) to support hormone balance and energy.",
+    "phase": "follicular",
+    "type": "diet",
+    "source": "bswhealth"
+  },
+  {
+    "id": "diet_014",
+    "text": "During ovulation, with increased energy, keep focusing on lean proteins, non-starchy vegetables (leafy greens, broccoli, cauliflower), healthy fats (avocados, seeds, nuts), and complex carbs (oats, quinoa, sweet potatoes, fruits) to support overall energy and balance.",
+    "phase": "ovulation",
+    "type": "diet",
+    "source": "bswhealth"
+  },
+  {
+    "id": "diet_015",
+    "text": "In the luteal phase, when cravings and PMS symptoms may arise, focus on lean proteins and complex carbs like beans, whole grain pastas, and breads. For cravings, opt for whole food options like dark chocolate, fruits, nuts, or seeds. Stay hydrated to help with bloating and fullness.",
+    "phase": "luteal",
+    "type": "diet",
+    "source": "bswhealth"
+  },
+  {
+    "id": "diet_016",
+    "text": "Dark chocolate is rich in iron and magnesium. Magnesium can help reduce PMS symptoms and ease discomfort during menstruation.",
+    "phase": "menstrual",
+    "type": "diet",
+    "source": "healthline"
+  },
+  {
+    "id": "diet_017",
+    "text": "Nuts are rich in omega-3 fatty acids, protein, magnesium, and vitamins, making them a great snack during your period.",
+    "phase": "menstrual",
+    "type": "diet",
+    "source": "healthline"
+  },
+  {
+    "id": "diet_018",
+    "text": "Flaxseed oil may help soothe constipation, a common symptom during menstruation, though more research is needed to confirm its digestive health benefits.",
+    "phase": "menstrual",
+    "type": "diet",
+    "source": "healthline"
+  },
+  {
+    "id": "diet_019",
+    "text": "Quinoa is a great source of iron, protein, and magnesium. It’s gluten-free and has a low glycemic index, providing lasting energy during your period.",
+    "phase": "menstrual",
+    "type": "diet",
+    "source": "healthline"
+  },
+  {
+    "id": "diet_020",
+    "text": "Lentils and beans are rich in protein and iron, making them great for replenishing iron levels during your period.",
+    "phase": "menstrual",
+    "type": "diet",
+    "source": "healthline"
+  },
+  {
+    "id": "diet_021",
+    "text": "Yogurt, rich in probiotics, can support vaginal health and help prevent yeast infections during your period. It also contains magnesium and calcium.",
+    "phase": "menstrual",
+    "type": "diet",
+    "source": "healthline"
+  },  
+  {
+    "id": "diet_022",
+    "text": "Tofu is a good plant-based source of protein, rich in iron, magnesium, and calcium, making it a great addition to your diet during menstruation.",
+    "phase": "menstrual",
+    "type": "diet",
+    "source": "healthline"
+  },
+  {
+    "id": "diet_023",
+    "text": "Peppermint tea can soothe menstrual cramps, nausea, and diarrhea during your period.",
+    "phase": "menstrual",
+    "type": "diet",
+    "source": "healthline"
+  },  
+  {
+    "id": "diet_024",
+    "text": "Kombucha, a probiotic-rich tea, can provide yeast-fighting benefits, especially if you’re avoiding dairy during your period. Be mindful of the sugar content.",
+    "phase": "menstrual",
+    "type": "diet",
+    "source": "healthline"
+  },  
+  {
+    "id": "diet_025",
+    "text": "Avoid excessive salt consumption to reduce water retention and bloating. Limit processed foods high in sodium.",
+    "phase": "menstrual",
+    "type": "diet",
+    "source": "healthline"
+  },  
+  {
+    "id": "diet_026",
+    "text": "Limit sugar intake to avoid spikes in energy followed by crashes, which can affect your mood during your period.",
+    "phase": "menstrual",
+    "type": "diet",
+    "source": "healthline"
+  },  
+  {
+    "id": "diet_027",
+    "text": "Reduce coffee consumption to avoid water retention, bloating, and headaches. Caffeine withdrawal can also cause headaches, so reduce gradually if you’re used to drinking it regularly.",
+    "phase": "menstrual",
+    "type": "diet",
+    "source": "healthline"
+  },  
+  {
+    "id": "diet_028",
+    "text": "Limit alcohol, as it can dehydrate you, worsen bloating, and lead to digestive issues during your period.",
+    "phase": "menstrual",
+    "type": "diet",
+    "source": "healthline"
+  },  
+  {
+    "id": "diet_029",
+    "text": "Avoid spicy foods if they upset your stomach, as they may cause diarrhea, stomach pain, and nausea during your period.",
+    "phase": "menstrual",
+    "type": "diet",
+    "source": "healthline"
+  },  
+  {
+    "id": "diet_030",
+    "text": "Red meat can increase prostaglandins, which cause cramps during menstruation. It’s better to limit red meat intake during your period.",
+    "phase": "menstrual",
+    "type": "diet",
+    "source": "healthline"
+  },  
+  {
+    "id": "diet_031",
+    "text": "If you have food sensitivities, it’s essential to avoid foods that trigger discomfort, especially during your period, to avoid nausea, constipation, or diarrhea.",
+    "phase": "menstrual",
+    "type": "diet",
+    "source": "healthline"
+  },  
+  
+  {
+    "id": "advice_001",
+    "text": "Heavy training without proper nutrition may disrupt your menstrual cycle. Extreme stress or under-eating can lead to amenorrhea.",
+    "phase": "any",
+    "type": "advice",
+    "source": "drbrighten.com"
+  },
+  {
+    "id": "advice_002",
+    "text": "Amenorrhea, or loss of period, can affect athletes and casual exercisers alike. It's often caused by a combination of over-exercise and under-fueling.",
+    "phase": "any",
+    "type": "advice",
+    "source": "drbrighten.com"
+  },
+  {
+    "id": "advice_003",
+    "text": "Listening to your body and adjusting your food intake and exercise routine according to your menstrual cycle can help you feel stronger, healthier, and more in tune with yourself every day.",
+    "phase": "all",
+    "type": "advice",
+    "source": "trinityhealthmichigan"
+  },
+  {
+    "id": "advice_004",
+    "text": "If you have irregular periods due to PCOS or thyroid disorders, syncing your routine with your cycle might be more challenging. It's important to address hormonal imbalances with a healthcare provider to make cycle syncing easier.",
+    "phase": "all",
+    "type": "advice",
+    "source": "trinityhealthmichigan"
+  },
+  {
+    "id": "advice_005",
+    "text": "For those experiencing perimenopause, maintaining a regular exercise routine, including weight training and cardio, along with increasing protein intake, can help manage symptoms during this transition.",
+    "phase": "perimenopause",
+    "type": "advice",
+    "source": "trinityhealthmichigan"
+  },
+  {
+    "id": "advice_004",
+    "text": "Cycle syncing nutrition can be beneficial if you listen to your body and adjust your diet based on your menstrual phase. Understanding your nutritional needs throughout the month can reduce stress, anxiety, and promote better self-care.",
+    "phase": "all",
+    "type": "advice",
+    "source": "bswhealth"
+  },{
+    "id": "advice_005",
+    "text": "Cycle syncing can potentially lead to better mood, reduced period symptoms (like cramps and bloating), and more energy by aligning your diet and fitness with the phases of your menstrual cycle. This can also help with sleep prioritization, appetite changes, and even fertility awareness. It's especially beneficial for those with conditions like endometriosis, PCOS, PMS, or PMDD.",
+    "phase": "all",
+    "type": "advice",
+    "source": "webmd"
+  },
+  {
+    "id": "advice_006",
+    "text": "To start cycle syncing, track your period for a few months to understand your cycle length and identify your phases. Use a calendar or period-tracking app to log symptoms and lifestyle factors like energy, mood, and appetite changes. This will help you adjust your nutrition and exercise for each phase of your cycle.",
+    "phase": "all",
+    "type": "advice",
+    "source": "webmd"
+  },
+  {
+    "id": "advice_007",
+    "text": "Cycle syncing may not apply to those on hormonal birth control, as it suppresses natural menstrual cycles. However, it's still important to pay attention to how you feel on birth control and adjust your diet and lifestyle accordingly.",
+    "phase": "all",
+    "type": "advice",
+    "source": "webmd"
+  },
+  
+  {
+    "id": "recipe_001",
+    "text": "Sample Recipe: Warm Lentil and Spinach Salad – A nutrient-rich meal combining iron from lentils and spinach, magnesium from avocado, and omega-3s from flaxseed topping. Ideal during menstruation to support energy, digestion, and reduce cramping.",
+    "phase": "menstrual",
+    "type": "recipe",
+    "source": "elara.care"
+  },
+  {
+    "id": "recipe_002",
+    "text": "Sample Recipe: Grilled Chicken and Quinoa Bowl with Fresh Veggies – A balanced meal ideal for the late follicular phase. Combines lean protein from chicken to support hormone balance, quinoa for sustained energy, and mixed vegetables for essential vitamins and minerals. Healthy fats from olive oil aid in hormone production. Perfect for promoting hormonal balance and egg maturation.",
+    "phase": "follicular",
+    "type": "recipe",
+    "source": "elara.care"
+  },
+  {
+    "id": "recipe_003",
+    "text": "Berry Nut Salad with Grilled Chicken – Serves: 4. A refreshing and nutrient-rich meal ideal for the ovulatory phase. Ingredients: Chicken Breast (4 pieces) – Lean protein supports energy levels during this high-energy phase. Mixed Berries (2 cups, e.g., strawberries, blueberries, raspberries) – Antioxidant-rich berries support ovulation and reproductive health. Mixed Nuts (1/2 cup, e.g., almonds, walnuts) – A good source of healthy fats and protein. Mixed Greens (4 cups) – Provide essential vitamins and minerals. Balsamic Vinaigrette – A light and tangy dressing. Instructions: Grill chicken as in the previous recipe. Toss mixed greens, berries, and nuts in a bowl. Slice grilled chicken and place on top. Drizzle with balsamic vinaigrette, toss gently, and serve.",
+    "phase": "ovulatory",
+    "type": "recipe",
+    "source": "elara.care"
+  },
+  {
+    "id": "recipe_004",
+    "text": "Salmon Sushi Bowl – Serves: 2. A vibrant bowl packed with omega-3s, antioxidants, and healthy fats. Ingredients: Salmon (8 oz, sashimi-grade) – Rich in omega-3 fatty acids to support heart and brain health. Brown Rice (2 cups, cooked) – Provides sustained energy. Seaweed (2 sheets, roasted nori) – Adds omega-3s and umami flavor. Avocado (1 ripe, sliced) – Offers heart-healthy monounsaturated fats. Strawberries (1 cup, sliced) – Antioxidant-rich with vitamin C. Instructions: Slice salmon into strips or cubes. Cook and cool brown rice. Cut seaweed into strips. Slice avocado and strawberries. Assemble bowls with rice and toppings. Optionally serve with soy sauce, wasabi, and pickled ginger. Serve fresh.",
+    "phase": "luteal",
+    "type": "recipe",
+    "source": "elara.care"
+  },
+  {
+    "id": "recipe_005",
+    "text": "Beef and Lentil Stew – Serves: 4. A warm, iron-rich stew to support the body before menstruation. Ingredients: Lean Beef (1 lb, cubed) – Excellent source of iron. Lentils (1 cup) – High in fiber and iron. Vegetable Broth (4 cups) – Nutrient-rich base. Carrots, Celery, Onion (diced) – Adds flavor and nutrients. Garlic (2 cloves, minced) – Anti-inflammatory. Salt and Pepper – To taste. Instructions: Brown beef in olive oil, then set aside. Sauté carrots, celery, and onion until tender. Add garlic and cook for another minute. Return beef to pot, add lentils and broth. Bring to boil, then simmer 25–30 minutes. Season to taste and serve warm.",
+    "phase": "luteal",
+    "type": "recipe",
+    "source": "elara.care"
+  }
+  
+  
+
+  
+  
+
+]
