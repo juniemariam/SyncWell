@@ -29,7 +29,9 @@ public class ChatFragment extends Fragment {
     private TextView chatResponse;
 
     private final OkHttpClient client = new OkHttpClient();
-    private final String backendUrl = "http://10.0.2.2:8000/query";  // Emulator IP
+    //private final String backendUrl = "http://10.0.2.2:8000/query";  // Emulator IP
+    private final String backendUrl = "https://syncwell.onrender.com/query";
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
