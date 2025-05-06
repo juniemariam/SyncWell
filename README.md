@@ -47,6 +47,8 @@
 ```bash
 git clone https://github.com/yourusername/syncwell-android.git
 
+git clone https://github.com/yourusername/syncwell-android.git
+
 Open in Android Studio: Navigate to File > Open and select the cloned project directory.
 Build the project:Allow Gradle to sync and build the project.
 Run the app:
@@ -59,7 +61,7 @@ Instrumented Tests: Located in the src/androidTest/java directory.
 Running Tests:
 Right-click on the test class or method and select 'Run'.
 Use the terminal:
- ./gradlew test
+./gradlew test
 ./gradlew connectedAndroidTest
 
 Future Enhancements
