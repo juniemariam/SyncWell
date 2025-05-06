@@ -46,26 +46,38 @@
 
 ```bash
 git clone https://github.com/yourusername/syncwell-android.git
+2. **Open in Android Studio**  
+   Navigate to `File > Open` and select the cloned project directory.
 
-git clone https://github.com/yourusername/syncwell-android.git
+3. **Build the project**  
+   Allow Gradle to sync and build the project without errors.
 
-Open in Android Studio: Navigate to File > Open and select the cloned project directory.
-Build the project:Allow Gradle to sync and build the project.
-Run the app:
-Connect an Android device or start an emulator.
-Click the 'Run' button or use Shift + F10.
+4. **Run the app**  
+   - Connect a physical Android device or start an emulator.
+   - Click the **Run** button in Android Studio or press `Shift + F10`.
 
-Testing
-Unit Tests: Located in the src/test/java directory.
-Instrumented Tests: Located in the src/androidTest/java directory.
-Running Tests:
-Right-click on the test class or method and select 'Run'.
-Use the terminal:
+---
+
+## 🧪 Testing
+
+- **Unit Tests**: Located in the `src/test/java` directory.
+- **Instrumented Tests**: Located in the `src/androidTest/java` directory.
+
+### To run tests:
+
+Using Android Studio:
+- Right-click on the test class or method and select **Run**.
+
+Using terminal:
+
+```bash
 ./gradlew test
 ./gradlew connectedAndroidTest
 
-Future Enhancements
-Notifications: Reminders for upcoming menstrual cycles.
-Data Backup: Cloud synchronization for user data.
-Analytics: Insights and predictions based on logged data.
-Localization: Support for multiple languages.
+## 📈 Future Enhancements
+
+- 🔔 **Notifications**: Reminders for upcoming menstrual cycles.
+- ☁️ **Data Backup**: Cloud synchronization for user data.
+- 📊 **Analytics**: Insights and predictions based on logged data.
+- 🌐 **Localization**: Support for multiple languages.
+
