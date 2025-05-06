@@ -2,6 +2,8 @@ package com.example.syncwell_android;
 
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
+
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +31,8 @@ public class ChatFragment extends Fragment {
     private TextView chatResponse;
 
     private final OkHttpClient client = new OkHttpClient();
+
+//    private final String backendUrl = "https://syncwell.onrender.com/query";
     private final String backendUrl = "http://10.0.2.2:8000/query";  // Emulator IP
 
     @Override
@@ -73,9 +77,13 @@ public class ChatFragment extends Fragment {
                     try {
                         JSONObject jsonObject = new JSONObject(response.body().string());
                         String answer = jsonObject.getString("answer");
+                        // Convert markdown-style bold (**) and line breaks into HTML
+                        String styled = answer
+                                .replaceAll("\\*\\*(.*?)\\*\\*", "<b>$1</b>")
+                                .replace("\n", "<br>");
 
                         requireActivity().runOnUiThread(() ->
-                                chatResponse.setText(answer));
+                                chatResponse.setText(Html.fromHtml(styled, Html.FROM_HTML_MODE_LEGACY)));
                     } catch (Exception e) {
                         requireActivity().runOnUiThread(() ->
                                 Toast.makeText(getContext(), "Failed to parse response", Toast.LENGTH_SHORT).show());
