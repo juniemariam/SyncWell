@@ -1,0 +1,11 @@
+# render.yaml
+services:
+  - type: web
+    name: syncwell-rag-backend
+    env: docker
+    region: oregon
+    plan: free
+    branch: main
+    dockerfilePath: syncwell_rag_backend/Dockerfile
+    buildCommand: cd syncwell_rag_backend && pip install -r requirements.txt
+    startCommand: cd syncwell_rag_backend && uvicorn main:app --host 0.0.0.0 --port 8000
