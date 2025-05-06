@@ -46,6 +46,7 @@
 
 ```bash
 git clone https://github.com/yourusername/syncwell-android.git
+``` 
 2. **Open in Android Studio**  
    Navigate to `File > Open` and select the cloned project directory.
 
@@ -73,6 +74,7 @@ Using terminal:
 ```bash
 ./gradlew test
 ./gradlew connectedAndroidTest
+``` 
 
 ## 📈 Future Enhancements
 
