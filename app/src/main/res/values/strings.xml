@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">SyncWell-Android</string>
+    <string name="user_information">User Information</string>
+    <string name="bmi">BMI: N/A</string>
+    <string name="name_hint">Name</string>
+    <string name="age_hint">Age</string>
+    <string name="weight_hint">Weight (kg)</string>
+    <string name="height_hint">Height (cm)</string>
+    <string name="save_profile">Save Profile</string>
+    <string name="period_log">Period Log</string>
+    <string name="log_period">Log Period</string>
+    <string name="view_period_history">View Period History</string>
+
 </resources>

@@ -11,10 +11,8 @@ public class PhaseUtils {
         public String dietTips;
         public String exerciseTips;
 
-        public PhaseDetails(String phase, String dietTips, String exerciseTips) {
+        public PhaseDetails(String phase) {
             this.phase = phase;
-            this.dietTips = dietTips;
-            this.exerciseTips = exerciseTips;
         }
     }
 
@@ -37,27 +35,18 @@ public class PhaseUtils {
         // Determine phase and recommendations based on cycle day
         if (cycleDay >= 1 && cycleDay <= 5) {
             return new PhaseDetails(
-                    "Menstrual",
-                    "Focus on iron-rich foods like spinach, lentils and red meat.",
-                    "Rest, gentle yoga, and stretching can be beneficial."
-            );
+                    "Menstrual");
         } else if (cycleDay >= 6 && cycleDay <= 13) {
             return new PhaseDetails(
-                    "Follicular",
-                    "Include proteins, fresh fruits, and vegetables.",
-                    "Great time for strength training and cardio."
+                    "Follicular"
             );
         } else if (cycleDay >= 14 && cycleDay <= 16) {
             return new PhaseDetails(
-                    "Ovulatory",
-                    "Eat zinc-rich and high-fiber foods; stay well hydrated.",
-                    "Ideal for high-intensity interval training (HIIT) workouts."
+                    "Ovulation"
             );
         } else {  // cycleDay 17 to cycleLength
             return new PhaseDetails(
-                    "Luteal",
-                    "Focus on magnesium-rich foods like bananas, dark chocolate, and leafy greens.",
-                    "Opt for low-intensity workouts like Pilates or yoga."
+                    "Luteal"
             );
         }
     }
