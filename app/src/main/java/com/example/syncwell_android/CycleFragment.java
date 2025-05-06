@@ -2,6 +2,7 @@ package com.example.syncwell_android;
 
 import android.app.DatePickerDialog;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -72,8 +73,9 @@ public class CycleFragment extends Fragment {
             phaseOutput.setText("We feel you are in: " + details.phase + " phase");
 
             // Call RAG backend
-            callRagModel("Give me the top 5 recommended foods to include in diet during the " + details.phase + " phase.", true);
-            callRagModel("Give me the top 5 recommended exercises to perform during the " + details.phase + " phase.", false);
+
+            callRagModel("3 common foods to eat in " + details.phase.toLowerCase() + " phase.", true);
+            callRagModel("Give me the top 3 recommended exercises to perform during the " + details.phase.toLowerCase() + " phase.", false);
         });
 
         return view;
@@ -104,6 +106,7 @@ public class CycleFragment extends Fragment {
 
     private void callRagModel(String question, boolean isDiet) {
         MediaType mediaType = MediaType.parse("application/json");
+        Log.d("RAG_QUESTION_SENT", "Question being sent: " + question);
         String json = "{\"question\": \"" + question + "\"}";
 
         RequestBody body = RequestBody.create(json, mediaType);
@@ -131,11 +134,20 @@ public class CycleFragment extends Fragment {
                         JSONObject jsonObject = new JSONObject(respText);
                         String answer = jsonObject.getString("answer");
 
+                        // Convert markdown-style bold (**) and line breaks into HTML
+                        String styled = answer
+                                .replaceAll("\\*\\*(.*?)\\*\\*", "<b>$1</b>")
+                                .replace("\n", "<br>");
+
                         requireActivity().runOnUiThread(() -> {
                             if (isDiet) {
-                                dietTip.setText("Diet Recommendations:\n" + answer);
+                                dietTip.setText(Html.fromHtml("<b>Diet Recommendations:</b><br>" + styled, Html.FROM_HTML_MODE_LEGACY));
+
+//                                dietTip.setText("Diet Recommendations:\n" + answer);
                             } else {
-                                exerciseTip.setText("Exercise Recommendations:\n" + answer);
+                                exerciseTip.setText(Html.fromHtml("<b>Exercise Recommendations:</b><br>" + styled, Html.FROM_HTML_MODE_LEGACY));
+
+//                                exerciseTip.setText("Exercise Recommendations:\n" + answer);
                             }
                         });
 
