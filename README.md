@@ -8,12 +8,17 @@
 
 ## 📱 Overview
 
-**SyncWell** is an Android application designed to assist women in tracking their menstrual cycles, monitoring health metrics, and accessing personalized insights. By leveraging intuitive interfaces and reliable data storage, SyncWell aims to promote proactive health management and awareness.
+SyncWell is a wellness-focused mobile application designed to empower women by delivering personalized health recommendations based on their menstrual cycle. The application helps users track their cycle, understand which phase they are in (Menstrual, Follicular, Ovulatory, Luteal), and receive scientifically backed recommendations for diet, exercise, and self-care using a Retrieval-Augmented Generation (RAG) AI model.
+The project blends mobile health (mHealth), AI-driven personalization, and intuitive Android design to provide phase-aware support that helps women stay active, informed, and mindful of their body’s needs across the month.
+
 
 ---
 
 ## ✨ Features
 
+
+- **Cycle Phase Detection**: Users log their menstrual cycles via a calendar, and SyncWell identifies their current phase (Menstrual, Follicular, Ovulatory, or Luteal).
+- **AI-Powered Guidance**: A chatbot offers phase-specific wellness tips using a RAG system with ChromaDB for retrieval and an open-source LLM or Gemini Pro for responses.
 - **User Profile Management**: Input and update personal details such as name, age, weight, and height.
 - **BMI Calculation**: Automatic computation of Body Mass Index based on user inputs.
 - **Menstrual Cycle Logging**: Record start and end dates of menstrual periods.
@@ -24,7 +29,7 @@
 ---
 
 ## 🛠️ Tech Stack
-
+Frontend
 - **Language**: Java  
 - **Framework**: Android SDK  
 - **Database**: Room (SQLite abstraction)  
@@ -32,6 +37,12 @@
 - **Date Handling**: Java Calendar, DatePickerDialog  
 - **Data Storage**: SharedPreferences for lightweight data  
 
+Backend
+- **Language**: Python
+- **Framework**: FastAPI (RESTful API)
+- **Vector Database**: ChromaDB (DuckDB + FAISS)
+- **Embeddings**: Sentence-BERT (SBERT)
+- **LLM for Response Generation**: Gemini Pro
 ---
 
 ## 🚀 Getting Started
