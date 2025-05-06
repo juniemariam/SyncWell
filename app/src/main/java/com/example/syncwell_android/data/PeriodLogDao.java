@@ -15,4 +15,8 @@ public interface PeriodLogDao {
 
     @Update
     void update(PeriodLog log);
+
+    // ✅ Add this line for deletion
+    @Delete
+    void delete(PeriodLog log);
 }

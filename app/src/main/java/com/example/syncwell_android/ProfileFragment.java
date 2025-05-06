@@ -1,5 +1,6 @@
 package com.example.syncwell_android;
 
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -53,25 +54,79 @@ public class ProfileFragment extends Fragment {
 
         saveButton.setOnClickListener(v -> saveUserInfo());
 
-        // Period logging
-        startDateButton = view.findViewById(R.id.startDateButton);
-        endDateButton = view.findViewById(R.id.endDateButton);
-        logPeriodButton = view.findViewById(R.id.logPeriodButton);
-        viewHistoryButton = view.findViewById(R.id.viewHistoryButton);
-        startDateButton.setOnClickListener(v -> showDatePicker(true));
-        endDateButton.setOnClickListener(v -> showDatePicker(false));
+        // Initialize period buttons
+        logPeriodButton = view.findViewById(R.id.btnLogPeriod);
+        viewHistoryButton = view.findViewById(R.id.btnViewHistory);
 
-        logPeriodButton.setOnClickListener(v -> savePeriodLog());
-//        viewHistoryButton.setOnClickListener(v -> showAllLogs());
+        logPeriodButton.setOnClickListener(v -> openLogPeriodDialog());
         viewHistoryButton.setOnClickListener(v -> {
             Intent intent = new Intent(requireContext(), CycleHistoryActivity.class);
             startActivity(intent);
         });
 
-
         updateUIForMode();
         return view;
     }
+
+    private void openLogPeriodDialog() {
+        View dialogView = LayoutInflater.from(getContext()).inflate(R.layout.dialog_log_period, null);
+        Button startBtn = dialogView.findViewById(R.id.btnStartDate);
+        Button endBtn = dialogView.findViewById(R.id.btnEndDate);
+        Button logBtn = dialogView.findViewById(R.id.btnLog);
+
+        AlertDialog dialog = new AlertDialog.Builder(getContext())
+                .setTitle("Log Period")
+                .setView(dialogView)
+                .create();
+
+        Calendar localStartDate = Calendar.getInstance();
+        Calendar localEndDate = Calendar.getInstance();
+
+        startBtn.setOnClickListener(v -> showDatePickerDialog(localStartDate, date -> {
+            selectedStartDate = date;
+            SimpleDateFormat sdf = new SimpleDateFormat("MMM dd, yyyy", Locale.getDefault());
+            startBtn.setText("Start: " + sdf.format(date.getTime()));
+        }));
+
+        endBtn.setOnClickListener(v -> showDatePickerDialog(localEndDate, date -> {
+            selectedEndDate = date;
+            SimpleDateFormat sdf = new SimpleDateFormat("MMM dd, yyyy", Locale.getDefault());
+            endBtn.setText("End: " + sdf.format(date.getTime()));
+        }));
+
+        logBtn.setOnClickListener(v -> {
+            if (selectedStartDate == null || selectedEndDate == null) {
+                Toast.makeText(getContext(), "Please select both dates", Toast.LENGTH_SHORT).show();
+            } else {
+                savePeriodLog();
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
+    }
+
+    private void showDatePickerDialog(Calendar initialDate, DatePickerListener listener) {
+        DatePickerDialog dialog = new DatePickerDialog(
+                getContext(),
+                (view, year, month, dayOfMonth) -> {
+                    Calendar selected = Calendar.getInstance();
+                    selected.set(year, month, dayOfMonth);
+                    listener.onDateSelected(selected);
+                },
+                initialDate.get(Calendar.YEAR),                initialDate.get(Calendar.MONTH),
+
+                initialDate.get(Calendar.DAY_OF_MONTH)
+        );
+        dialog.show();
+    }
+
+    interface DatePickerListener {
+        void onDateSelected(Calendar date);
+    }
+
+
+
 
     @Override
     public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
@@ -181,8 +236,6 @@ public class ProfileFragment extends Fragment {
         }).start();
 
         Toast.makeText(getContext(), "Period logged!", Toast.LENGTH_SHORT).show();
-        startDateButton.setText("Select Start Date");
-        endDateButton.setText("Select End Date");
         selectedStartDate = null;
         selectedEndDate = null;
     }
