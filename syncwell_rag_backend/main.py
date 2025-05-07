@@ -8,7 +8,7 @@ app = FastAPI()
 class QueryRequest(BaseModel):
     question: str
 
-# Simple keyword-based phase/type detection
+# Simple rule-based detection of phase and type
 def detect_phase_and_type(question: str):
     q = question.lower()
     phase = "unknown"
@@ -28,24 +28,34 @@ def detect_phase_and_type(question: str):
 
 @app.post("/query")
 def query_rag(request: QueryRequest):
-    # Step 1: Detect phase and type from question
-    phase, qtype = detect_phase_and_type(request.question)
+    question = request.question
+    phase, qtype = detect_phase_and_type(question)
 
-    if phase == "unknown" or qtype == "unknown":
-        return {"answer": "Sorry, I couldn’t determine the phase or type of question. Please rephrase."}
+    if qtype == "unknown":
+        return {
+                "answer": "I'm your health assistant here to help with diet and exercise advice across the menstrual cycle. "
+                "I couldn’t determine whether your question was about diet or exercise. Could you please rephrase or be more specific?"
+            }
 
-    # Step 2: Retrieve filtered documents
-    docs = search_similar_docs(request.question, phase, qtype)
+    # Fallback: Search across all phases if phase is unknown
+    possible_phases = [phase] if phase != "unknown" else ["menstrual", "follicular", "ovulatory", "luteal"]
+    
+    docs = []
+    for p in possible_phases:
+        docs += search_similar_docs(question, p, qtype)
 
-    # Step 3: Construct RAG prompt
+    if not docs:
+        return {"answer": "Sorry, I couldn’t find relevant information in the knowledge base."}
+
+    # Construct prompt for Gemini
     context = "\n".join(docs)
+    phase_info = phase if phase != "unknown" else "the appropriate menstrual phase"
     prompt = (
-        f"You are a helpful health assistant. Based on the following information specific to the {phase} phase "
+        f"You are a helpful health assistant. Based on the following information specific to {phase_info} "
         f"and focused on {qtype}, answer the question.\n\n"
         f"{context}\n\n"
-        f"Question: {request.question}"
+        f"Question: {question}"
     )
 
-    # Step 4: Get response from Gemini
     response = generate_answer(prompt)
     return {"answer": response}
